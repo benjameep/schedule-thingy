@@ -1,0 +1,16 @@
+<head><style>*{margin:0px;padding:0px}</style></head>
+<canvas id="cancan"></canvas>
+<script>
+	var canvas = document.querySelector('canvas')
+	var draw = canvas.getContext("2d");
+	window.onload = function(){
+		fitScreen()
+		init()
+	}
+	window.onresize = fitScreen
+	function fitScreen(){
+		canvas.width = window.innerWidth;
+		canvas.height = window.innerHeight;
+	}
+</script>
+<script src="meep.js"></script>
